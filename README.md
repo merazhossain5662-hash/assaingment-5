@@ -9,3 +9,9 @@ and from here 'var' is a function-scoped and can be redeclare and updeted. But m
 ## 2️⃣ What is the spread operator (...)?
 # answer :-The spread oparator is used to expand or copy elements from arrays or objacts.
 It helps in copying, merging, or passing mutiple values easily.
+
+## 3️⃣ What is the difference between map(), filter(), and forEach()?
+# answer :- These are aray matheds used to itrate over arays.
+map() creates a new array by transforming each elements.
+filter() creates a new array with elements that pass a condition.
+forEach() simply loops through  the array and executes a function, but does not return a new array.
