@@ -4,3 +4,8 @@
 # answer :- These all are used to declare variables in JavaScript
 and from here 'var' is a function-scoped and can be redeclare and updeted. But most of the teachers prefer not to used this because it is much old and it has some bugs. We can use 'let' or 'const' instad. 'lat' is block-scoped and can be updeted but can not redeclare in the same scope.
 'const' is block-scoped and can not be updted or redeclared after assaingment. 
+
+
+## 2️⃣ What is the spread operator (...)?
+# answer :-The spread oparator is used to expand or copy elements from arrays or objacts.
+It helps in copying, merging, or passing mutiple values easily.
