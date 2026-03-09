@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./B13-A5-Github-Issue-Tracker/assets/github-logo.png" type="image/x-icon">
+    <title>GitHub Issues Tracker | Home</title>
+    <!-- tailwind and daisyUI -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+<!-- font awsome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- font famìly-->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+</head>
+<body class="bg-slate-200 pb-2">
+<div class="navbar bg-base-100 shadow-sm flex justify-between  lg:pl-5 lg:pr-6 ">
+  <div class="flex gap-1 items-center flex-wrap">
+    <img src="./B13-A5-Github-Issue-Tracker/assets/github-logo.png" class="w-[36px] h-[36px]" alt="">
+    <a class="text-xl font-semibold">GitHub Issues Tracker</a>
+  </div>
+  <div class="flex-none">
+    <div class="flex gap-2 lg:flex-nowrap flex-wrap"><label class="input">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.3-4.3"></path>
+    </g>
+  </svg>
+  <input type="search" id="input-search" required placeholder="Search" />
+</label>
+<button onclick="search()" id="input-btn" class="btn btn-primary"> Search Issue</button>
+</div>
+
+  </div>
+</div>
+
+<section class="lg:w-[1110px] my-6 lg:h-[88px] sm:w-full sm:h-full sm:py-2 grid lg:grid-cols-9 sm:grid-cols-3 mb-5 pl-3 items-center gap-2 bg-white rounded-md mx-auto">
+<button id="all" onclick="allBtn()" class="btn btn-soft btn-primary">All</button>
+<button id="open" onclick="openBtn()" class="btn btn-soft btn-primary">Open</button>
+<button id="close" onclick="closeBtn()" class="btn btn-soft btn-primary">Closed</button>
+</section>
+<section class="lg:w-[1110px] mb-0.5 lg:h-[88px] flex-wrap flex justify-between items-center gap-2 bg-white rounded-md mx-auto">
+<div class="flex items-center p-4">
+  <div id="image" class="p-3 bg-slate-100 rounded-full">
+    <img src="./B13-A5-Github-Issue-Tracker/assets/Aperture.png" alt="">
+  </div>
+  <div id="pa">
+   <h1 class="text-xl font-semibold"><span id="count">50</span> Issues</h1>
+   <p class=" text-neutral-500">Track and manage your project issues</p>
+  </div>
+</div>
+<div class="flex items-center gap-1.5">
+  <p class="bg-green-600 w-3 h-3 rounded-full"></p>
+<p>Open</p><br>
+  <p class="bg-purple-600 w-3 h-3 rounded-full"></p>
+<p>Closed</p>
+</div>
+</section>
+<section id="loading" class="grid items-center w-[1410px] h-full hidden">
+  <span class="loading loading-dots loading-xl mx-auto text-primary"></span>
+</section>
+<main id="main" class="w-full h-full ">
+<section id="all-container" class="grid space-y-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-auto lg:w-[1110px] md:w-full sm:w-full h-full bg-[#FBFBFB] p-2"> 
+
+</section>
+<section id="open-container" class="grid space-y-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-auto lg:w-[1110px] md:w-full sm:w-full h-full bg-[#FBFBFB] p-2"> 
+
+</section>
+<section id="close-container" class="grid space-y-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-auto lg:w-[1110px] md:w-full sm:w-full h-full bg-[#FBFBFB] p-2"> 
+
+</section>
+<section id="search-container" class="grid space-y-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-auto lg:w-[1110px] md:w-full sm:w-full h-full bg-[#FBFBFB] p-2"> 
+
+</section>
+</main>
+
+
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="single-container" class="p-2 space-y-4">
+    
+   
+  </div>
+</dialog>
+<script src="home.js"></script>
+</body>
+</html>
