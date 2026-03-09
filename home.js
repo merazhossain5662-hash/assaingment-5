@@ -167,7 +167,7 @@ closeContainer.classList.add("hidden");
   div.innerHTML=`
   <div  onclick="single(${data.id})" class="w-[256.5px] h-[273px]  space-y-2 ${data.status=="open" ?"border-green" :"border-purple"} rounded-lg shadow-lg p-1.5">
 <div id="first" class="flex justify-between">
-  <img src="./B13-A5-Github-Issue-Tracker/assets/${data.status=="open"?"Open-Status" :"Closed- Status "}.png" alt="">
+  <img src="../B13-A5-Github-Issue-Tracker/assets/${data.status=="open"?"Open-Status" :"Closed- Status "}.png" alt="">
   <div class="badge badge-soft  ${data.priority == "high" ?'badge-error' :data.priority=="medium"?"badge-warning" :"badge-normal"}">${data.priority}</div>
 </div>
 <h1 class="font-semibold">${data.title}</h1>
@@ -243,7 +243,7 @@ function openTab(datas){
   div.innerHTML=`
   <div onclick="single(${data.id})" class="w-[256.5px] h-[273px]  space-y-2 ${data.status=="open" ?"border-green" :"border-purple"} rounded-lg shadow-lg p-1.5">
 <div id="first" class="flex justify-between">
-  <img src="./B13-A5-Github-Issue-Tracker/assets/Open-Status.png" alt="">
+  <img src="../B13-A5-Github-Issue-Tracker/assets/Open-Status.png" alt="">
   <div class="badge badge-soft ${data.priority == "high" ?'badge-error' :data.priority=="medium"?"badge-warning" :"badge-normal"}">${data.priority}</div>
 </div>
 <h1 class="font-semibold">${data.title}</h1>
@@ -299,7 +299,7 @@ function allTab(datas){
   div.innerHTML=`
   <div onclick="single(${data.id})" class="w-[256.5px] h-[273px]  space-y-2 ${data.status=="open" ?"border-green" :"border-purple"} rounded-lg shadow-lg p-1.5">
 <div id="first" class="flex justify-between">
-  <img src="./B13-A5-Github-Issue-Tracker/assets/${data.status=="open"?"Open-Status" :"Closed- Status "}.png" alt="">
+  <img src="../B13-A5-Github-Issue-Tracker/assets/${data.status=="open"?"Open-Status" :"Closed- Status "}.png" alt="">
   <div class="badge badge-soft ${data.priority == "high" ?'badge-error' :data.priority=="medium"?"badge-warning" :"badge-normal"}">${data.priority}</div>
 </div>
 <h1 class="font-semibold">${data.title}</h1>
@@ -356,7 +356,7 @@ function closeTab(datas){
   div.innerHTML=`
   <div onclick="single(${data.id})" class="w-[256.5px] h-[273px] ${data.status=="open" ?"border-green" :"border-purple"} space-y-2 rounded-lg shadow-lg p-1.5">
 <div id="first" class="flex justify-between">
-   <img src="./B13-A5-Github-Issue-Tracker/assets/Closed- Status .png" >
+   <img src="../B13-A5-Github-Issue-Tracker/assets/Closed- Status .png" >
      <div class="badge badge-soft  ${data.priority == "high" ?'badge-error' :data.priority=="medium"?"badge-warning" :"badge-normal"}">${data.priority}</div>
 </div>
 <h1 class="font-semibold">${data.title}</h1>
