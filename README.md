@@ -15,3 +15,9 @@ It helps in copying, merging, or passing mutiple values easily.
 map() creates a new array by transforming each elements.
 filter() creates a new array with elements that pass a condition.
 forEach() simply loops through  the array and executes a function, but does not return a new array.
+
+## 4️⃣ What is an arrow function?
+# answer :- An arrow function is a shorter syntex for writng functions in javascript.
+
+## 5️⃣ What are template literals?
+# answer :- Template literals are a way to create strings in javascript using backticks, it allows multi line strins and variables.
